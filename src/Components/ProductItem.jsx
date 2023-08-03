@@ -1,10 +1,21 @@
-import { Image, StyleSheet, Text } from 'react-native'
+import { Image, Pressable, StyleSheet, Text } from 'react-native'
 import React from 'react'
 import Card from './Card'
 
 
-const ProductItem = ({item}) => {
+const ProductItem = ({
+  item,
+  setProductSelected,
+  setCategorySelected
+}) => {
+
+const onSelect = (id) => {
+  setProductSelected(id)
+  setCategorySelected("")
+}
+
   return (
+  <Pressable onPress={() => onSelect(item.id)}>
     <Card additionalStyle={styles.additionalStylesCard}>
         <Text style={styles.textCategory}>{item.title}</Text>
         <Image
@@ -13,6 +24,7 @@ const ProductItem = ({item}) => {
           source={{uri: item.images[0]}}
         />
     </Card>
+  </Pressable>
   )
 }
 

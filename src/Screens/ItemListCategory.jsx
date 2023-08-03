@@ -6,7 +6,8 @@ import ProductItem from '../Components/ProductItem'
 
 const ItemListCategory = ({
   category,
-  setCategory
+  setCategory,
+  setProductSelected
 }) => { 
 
   const [categorySelected, setCategorySelected] = useState(category)
@@ -34,7 +35,11 @@ const ItemListCategory = ({
       <FlatList
        data={Products}
        keyExtractor={product => product.id}
-       renderItem={({item}) => ProductItem({item})}
+       renderItem={({item}) => <ProductItem 
+         item={item}
+         setProductSelected={setProductSelected}
+         setCategorySelected={setCategory}
+         />}
        showsVerticalScrollIndicator={false}
       />
     </View>

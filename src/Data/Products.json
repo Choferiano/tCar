@@ -5,7 +5,7 @@
         "price": 33500000,
         "rating": 3.39,
         "brand": "Chevrolet",
-        "CV": 1.2,
+        "CV": "1.2",
         "model": 2013,
         "category": "Comercial",
         "images": [
@@ -21,7 +21,7 @@
         "price": 75000000,
         "rating": 4.29,
         "brand": "Renault",
-        "CV": 1.6,
+        "CV": "1.6",
         "model": 2023,
         "category": "Comercial",
         "images": [
@@ -36,7 +36,7 @@
         "price": 49990000,
         "rating": 4.42,
         "brand": "Kia",
-        "CV": 1.2,
+        "CV": "1.2",
         "model": 2021,
         "category": "Pequeños",
         "images": [
@@ -51,7 +51,7 @@
         "price": 71990000,
         "rating": 4.29,
         "brand": "Mazda",
-        "CV": 1.5,
+        "CV": "1.5",
         "model": 2018,
         "category": "Pequeños",
         "images": [
@@ -66,7 +66,7 @@
         "price": 80000000,
         "rating": 4.29,
         "brand": "Suzuki",
-        "CV": 2.4,
+        "CV": "2.4",
         "model": 2018,
         "category": "Todoterreno",
         "images": [
@@ -81,7 +81,7 @@
         "price": 28000000,
         "rating": 4.01,
         "brand": "Nissan",
-        "CV": 1.8,
+        "CV": "1.8",
         "model": 2011,
         "category": "Pequeños",
         "images": [
@@ -96,7 +96,7 @@
         "price": 71500000,
         "rating": 3.54,
         "brand": "Volkswagen",
-        "CV": 1.6,
+        "CV": "1.6",
         "model": 2020,
         "category": "Grandes",
         "images": [
@@ -111,7 +111,7 @@
         "price": 35000000,
         "rating": 2.86,
         "brand": "Chevrolet",
-        "CV": 1.6,
+        "CV": "1.6",
         "model": 2015,
         "category": "Grandes",
         "images": [
@@ -126,7 +126,7 @@
         "price": 54900000,
         "rating": 3.79,
         "brand": "Suzuki",
-        "CV": 1.3,
+        "CV": "1.3",
         "model": 2017,
         "category": "Todoterreno",
         "images": [
@@ -141,7 +141,7 @@
         "price": 50000000,
         "rating": 4.15,
         "brand": "Ford",
-        "CV": 1.6,
+        "CV": "1.6",
         "model": 2017,
         "category": "Pequeños",
         "images": [
@@ -156,7 +156,7 @@
         "price": 156000000,
         "rating": 4.88,
         "brand": "BMW",
-        "CV": 2.0,
+        "CV": "2.0",
         "model": 2020,
         "category": "Deportivo",
         "images": [
@@ -171,7 +171,7 @@
         "price": 175000000,
         "rating": 4.19,
         "brand": "Mercedes Benz",
-        "CV": 2.0,
+        "CV": "2.0",
         "model": 2020,
         "category": "De lujo",
         "images": [
@@ -186,7 +186,7 @@
         "price": 54000000,
         "rating": 4.89,
         "brand": "Volkswagen",
-        "CV": 1.6,
+        "CV": "1.6",
         "model": 2017,
         "category": "SUV",
         "images": [
@@ -201,7 +201,7 @@
         "price": 120000000,
         "rating": 4.80,
         "brand": "Mazda",
-        "CV": 2.0,
+        "CV": "2.0",
         "model": 2020,
         "category": "SUV",
         "images": [
@@ -216,6 +216,8 @@
         "price": 114000000,
         "rating": 4.56,
         "brand": "Cupra",
+        "CV": "3.0",
+        "model": 2020,
         "category": "Deportivo",
         "images": [
             "https://http2.mlstatic.com/D_NQ_NP_767556-MCO54984806229_052023-O.webp",
