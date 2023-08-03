@@ -5,21 +5,21 @@ import Search from '../Components/Search'
 import ProductItem from '../Components/ProductItem'
 
 const ItemListCategory = ({
-  category,
-  setCategory,
-  setProductSelected
+  navigation,
+  route
 }) => { 
 
-  const [categorySelected, setCategorySelected] = useState(category)
+  const {category} = route.params
+
   const [Products, setProducts] = useState([])
   const [Keyword, setKeyword] = useState ("")
 
   useEffect(()=>{
 
-    const productsFiltered = ProductsC.filter(product => product.category === categorySelected && product.title.includes(Keyword))
+    const productsFiltered = ProductsC.filter(product => product.category === category && product.title.includes(Keyword))
     setProducts (productsFiltered)
 
-  }, [categorySelected, Keyword])
+  }, [category, Keyword])
 
   const onSearch = (input) => {
     setKeyword(input)
@@ -30,15 +30,14 @@ const ItemListCategory = ({
     <View>
       <Search
         onSearch={onSearch}
-        goback={() => setCategory ("")}
+        goback={() => navigation.goBack()}
       />
       <FlatList
        data={Products}
        keyExtractor={product => product.id}
        renderItem={({item}) => <ProductItem 
          item={item}
-         setProductSelected={setProductSelected}
-         setCategorySelected={setCategory}
+         navigation={navigation}
          />}
        showsVerticalScrollIndicator={false}
       />

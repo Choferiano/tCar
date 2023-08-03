@@ -3,9 +3,11 @@ import React, { useEffect, useState } from 'react'
 import allProducts from '../Data/Products.json'
 
 const ItemDetail = ({
-    idSelected,
-    setProductSelected
+    navigation,
+    route
 }) => {
+
+  const {productId: idSelected} = route.params
 
   const [product, setProduct] = useState({})
 
@@ -16,7 +18,7 @@ const ItemDetail = ({
 
   return (
     <View>
-     <Button onPress={() => setProductSelected("")} title='Go back'/>
+     <Button onPress={() => navigation.goBack()} title='Go back'/>
      <View style={styles.itemDetailContainer}>
       <Text>{product.brand}</Text>
       <Text>{product.title}</Text>

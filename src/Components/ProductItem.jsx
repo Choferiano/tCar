@@ -5,13 +5,11 @@ import Card from './Card'
 
 const ProductItem = ({
   item,
-  setProductSelected,
-  setCategorySelected
+  navigation
 }) => {
 
 const onSelect = (id) => {
-  setProductSelected(id)
-  setCategorySelected("")
+   navigation.navigate('Detail', {productId: item.id})
 }
 
   return (
