@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import ProductsC from '../Data/Products.json'
 import Search from '../Components/Search'
 import ProductItem from '../Components/ProductItem'
+import { useSelector } from 'react-redux'
 
 const ItemListCategory = ({
   navigation,
@@ -11,15 +12,17 @@ const ItemListCategory = ({
 
   const {category} = route.params
 
+  const productsSelected = useSelector (state => state.shopReducer.value.productsSelected)
+
   const [Products, setProducts] = useState([])
   const [Keyword, setKeyword] = useState ("")
 
   useEffect(()=>{
 
-    const productsFiltered = ProductsC.filter(product => product.category === category && product.title.includes(Keyword))
+    const productsFiltered = productsSelected.filter(product => product.category === category && product.title.includes(Keyword))
     setProducts (productsFiltered)
 
-  }, [category, Keyword])
+  }, [productsSelected, Keyword])
 
   const onSearch = (input) => {
     setKeyword(input)
