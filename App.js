@@ -1,10 +1,7 @@
 import { Platform, StyleSheet, Text, View, StatusBar } from 'react-native';
-import Header from './src/Components/Header';
-import ItemListCategory from './src/Screens/ItemListCategory';
-import Home from './src/Screens/Home';
-import { useState } from 'react';
-import ItemDetail from './src/Screens/ItemDetail';
 import Navigator from './src/Navigation/Navigator';
+import { Provider } from 'react-redux';
+import store from './src/Store/store';
 //import { useFonts } from 'expo-font'
 
 export default function App() {
@@ -17,7 +14,9 @@ export default function App() {
   //}
 
   return (
+  <Provider store={store}>
     <Navigator/>
+  </Provider>
   );
 }
 

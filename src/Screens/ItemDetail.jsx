@@ -1,6 +1,8 @@
 import { Button, StyleSheet, Text, View, Image,} from 'react-native'
 import React, { useEffect, useState } from 'react'
 import allProducts from '../Data/Products.json'
+import { useDispatch } from 'react-redux'
+import { addCartItem } from '../Features/cartSlice'
 
 const ItemDetail = ({
     navigation,
@@ -9,6 +11,8 @@ const ItemDetail = ({
 
   const {productId: idSelected} = route.params
 
+  const dispatch = useDispatch()
+
   const [product, setProduct] = useState({})
 
    useEffect(() => {
@@ -16,6 +20,13 @@ const ItemDetail = ({
     setProduct(productSelected);
    }, [idSelected]);
 
+   onAddCart = () => {
+          dispatch(addCartItem({
+                ...product,
+                quantity: 1
+          }))
+   }
+   
   return (
     <View>
      <Button onPress={() => navigation.goBack()} title='Go back'/>
@@ -24,6 +35,9 @@ const ItemDetail = ({
       <Text>{product.title}</Text>
       <Text>${product.price}</Text>
       <Text>{product.model}</Text>
+      <Button onPress={onAddCart} title='Add Cart'> 
+              
+      </Button>
      </View>
     </View>
   )

@@ -16,7 +16,9 @@ export const shopSlice = createSlice({
         state.value.categorySelected = action.payload
         state.value.productSelected = state.value.allProducts.filter(product => product.category === action.payload)
     },
-       setIdSelected: (state,action) => {state.value.idSelected = action.payload}
+       setIdSelected: (state,action) => {
+        state.value.idSelected = action.payload
+    }
     }
 })
 

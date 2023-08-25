@@ -4,6 +4,7 @@ import ProductsC from '../Data/Products.json'
 import Search from '../Components/Search'
 import ProductItem from '../Components/ProductItem'
 import { useSelector } from 'react-redux'
+import { useGetProductsByCategoryQuery } from '../Services/shopServices'
 
 const ItemListCategory = ({
   navigation,
@@ -11,22 +12,35 @@ const ItemListCategory = ({
 }) => { 
 
   const {category} = route.params
+  // const productsSelected = useSelector (state => state.shopReducer.value.productsSelected)
+  const categorySelected = useSelector (state => state.shopReducer.value.categorySelected)
+  const {data: productsSelected, isError, isLoading} = useGetProductsByCategoryQuery(categorySelected)
 
-  const productsSelected = useSelector (state => state.shopReducer.value.productsSelected)
 
   const [Products, setProducts] = useState([])
   const [Keyword, setKeyword] = useState ("")
+  const [keywordError, setKeywordError] = useState("")
 
   useEffect(()=>{
-
-    const productsFiltered = productsSelected.filter(product => product.category === category && product.title.includes(Keyword))
+    
+    if (productsSelected) {
+    const productsFiltered = productsSelected.filter(product => product.title.includes(Keyword))
     setProducts (productsFiltered)
-
+    }
   }, [productsSelected, Keyword])
 
   const onSearch = (input) => {
-    setKeyword(input)
-  }
+    const expression = /^[a-zA-Z0-9\ ]*$/
+    const evaluation = expression.test(input)
+
+    if (evaluation) {
+      setKeyword(input)
+      setKeywordError("")
+    } else {
+      setKeywordError("Solo letras y números")
+    }
+
+  }  
 
 
   return (

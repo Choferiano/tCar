@@ -10,15 +10,21 @@ import { Ionicons } from '@expo/vector-icons';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import OrderStack from './OrderStack'
-import OrderScreen from '../Screens/OrderScreen'
+import AuthStack from './AutoStack'
+import { useSelector } from 'react-redux'
+import MyProfileStack from './MyProfileStack'
 
 const Tab = createBottomTabNavigator()
 
 const Navigator = () => {
+
+  const {email} = useSelector(state => state.userReducer.value)
   return (
     <View style={styles.container}>
-      <NavigationContainer> 
-        <Tab.Navigator
+      <NavigationContainer>
+        {
+          email ?
+          <Tab.Navigator
          screenOptions={{
              headerShown: false,
              tabBarShowLabel: false,
@@ -53,7 +59,7 @@ const Navigator = () => {
       }}
         />
         <Tab.Screen
-         name='Order'
+         name='Orders'
          component={OrderStack}
          options={{
           tabBarIcon: ({focused}) => {
@@ -66,9 +72,30 @@ const Navigator = () => {
           } 
       }}
         /> 
-        </Tab.Navigator>     
-        {/* <ShopStack/> */}
-        {/* <CartStack/> */}
+        <Tab.Screen
+                        name="MyProfile"
+                        component={MyProfileStack}
+                        options={{
+                            tabBarIcon: ({ focused }) => {
+                                return (
+                                    <View style={styles.item}>
+                                        <Ionicons
+                                            name="person-circle-outline"
+                                            size={24}
+                                            color={
+                                                focused
+                                                    ? 'black'
+                                                    : 'gray'
+                                            }
+                                        />
+                                    </View>
+                                );
+                            },
+                        }}
+                    />
+        </Tab.Navigator> 
+        :<AuthStack/> 
+        }      
       </NavigationContainer>
     </View>
   )

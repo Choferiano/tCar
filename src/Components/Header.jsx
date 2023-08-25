@@ -1,26 +1,64 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { Pressable, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { AntDesign } from "@expo/vector-icons";
+import { useDispatch, useSelector } from "react-redux";
+import { signOut } from "../Features/userSlice";
 
-const Header = () => {
-  return (
-    <View style={styles.containerH}>
-      <Text style={styles.textHeader}>Header</Text>
-    </View>
-  )
-}
+const Header = ({ route, navigation }) => {
+    let title;
+    if (route.name === "Home") title = "Home";
+    else if (route.name === "ItemListCategory") title = route.params.category;
+    else if (route.name === "Detail") title = route.params.title;
+    else title = route.name;
 
-export default Header
+    const dispatch = useDispatch();
+    const { email } = useSelector((state) => state.userReducer.value);
+
+    return (
+        <View style={styles.containerHeader}>
+            <Text style={styles.text}>{title}</Text>
+            {navigation.canGoBack() ? (
+                <Pressable
+                    style={styles.pressable}
+                    onPress={() => navigation.goBack()}
+                >
+                    <AntDesign name="back" size={24} color="black" />
+                </Pressable>
+            ) : null}
+            {email ? (
+                <Pressable
+                    style={styles.signOut}
+                    onPress={() => dispatch(signOut())}
+                >
+
+                </Pressable>
+            ) : null}
+        </View>
+    );
+};
+
+export default Header;
 
 const styles = StyleSheet.create({
-    containerH: {
-        width: '100%',
-        backgroundColor: 'violet',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 20
+    containerHeader: {
+        backgroundColor: "peach",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        paddingVertical: 15,
+        position: "relative",
     },
-    textHeader: {
-        fontSize: 30
-    }
-
-})
+    text: {
+        fontSize: 25,
+    },
+    pressable: {
+        position: "absolute",
+        right: 30,
+        top: "50%",
+    },
+    signOut: {
+        position: "absolute",
+        left: 30,
+        top: "50%",
+    },
+});
