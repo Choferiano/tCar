@@ -1,0 +1,34 @@
+[
+    {
+        "id": 4,
+        "title": "2 Grand Touring Lx",
+        "description": "2020 New Arrivals Genuine Leather Fashion Trend Platform Summer Women Shoes",
+        "price": 71990000,
+        "CV": "1.5",
+        "model": 2018,
+        "brand": "Mazda",
+        "category": "Pequeños",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_887368-MCO70771618380_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_683590-MCO70771464678_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_681326-MCO70771786810_072023-F.webp"
+        ],
+        "quantity": 2
+    },
+    {
+        "id": 9,
+        "title": "Jimny",
+        "description": "2020 New Arrivals Genuine Leather Fashion Trend Platform Summer Women Shoes",
+        "price": 54900000,
+        "CV": "1.3",
+        "model": 2017,
+        "brand": "Mazda",
+        "category": "Todoterreno",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_887368-MCO70771618380_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_683590-MCO70771464678_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_681326-MCO70771786810_072023-F.webp"
+        ],
+        "quantity": 3
+    }
+]

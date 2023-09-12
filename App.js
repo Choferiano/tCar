@@ -1,20 +1,40 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import Navigator from './src/Navigation/Navigator';
+import { Provider } from 'react-redux';
+import store from './src/Store/store';
+import { dropTableSessions, init } from './src/SQLite';
+import { useEffect } from 'react';
+import { useFonts } from 'expo-font'
 
 export default function App() {
+
+  useEffect(()=> {
+    init()
+      .then((result)=> {
+        console.log('Db initialized/dropped')
+        console.log(result);
+      })
+      .catch(err => {
+        console.log("Initialization DB failed:");
+        console.log(err.message);
+    })
+  }, [])
+  
+  const [fontsloaded] = useFonts ({
+     'motorOil': require('./src/Assets/Fonts/motorOil.ttf')
+   });
+
+   if (!fontsloaded) {
+     return null;
+   }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  <Provider store={store}>
+    <Navigator/>
+  </Provider>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  
 });

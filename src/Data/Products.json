@@ -1,0 +1,229 @@
+[
+    {
+        "id": 1,
+        "title": "Van N300 Cargo Plus",
+        "price": 33500000,
+        "rating": 3.39,
+        "brand": "Chevrolet",
+        "CV": "1.2",
+        "model": 2013,
+        "category": "Comercial",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_685581-MCO70488510724_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_956747-MCO70514955921_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_929723-MCO70514683039_072023-O.webp"
+        ]
+        
+    },
+    {
+        "id": 2,
+        "title": "Kangoo Express Panel",
+        "price": 75000000,
+        "rating": 4.29,
+        "brand": "Renault",
+        "CV": "1.6",
+        "model": 2023,
+        "category": "Comercial",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_997110-MCO54357346362_032023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_608344-MCO54355785419_032023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_950801-MCO54357280876_032023-F.webp"
+        ]
+    }, 
+    {
+        "id": 3,
+        "title": "Picanto",
+        "price": 49990000,
+        "rating": 4.42,
+        "brand": "Kia",
+        "CV": "1.2",
+        "model": 2021,
+        "category": "Pequeños",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_796734-MCO70797933613_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_689606-MCO70767237688_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_613109-MCO70798200989_072023-O.webp"
+        ]
+    }, 
+    {
+        "id": 4,
+        "title": "2 Grand Touring Lx",
+        "price": 71990000,
+        "rating": 4.29,
+        "brand": "Mazda",
+        "CV": "1.5",
+        "model": 2018,
+        "category": "Pequeños",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_887368-MCO70771618380_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_683590-MCO70771464678_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_681326-MCO70771786810_072023-F.webp"
+        ]
+    }, 
+    {
+        "id": 5,
+        "title": "Grand Vitara",
+        "price": 80000000,
+        "rating": 4.29,
+        "brand": "Suzuki",
+        "CV": "2.4",
+        "model": 2018,
+        "category": "Todoterreno",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_661270-MCO70460014578_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_999253-MCO70460014282_072023-F.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_917994-MCO70485970023_072023-F.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Tiida Emotion",
+        "price": 28000000,
+        "rating": 4.01,
+        "brand": "Nissan",
+        "CV": "1.8",
+        "model": 2011,
+        "category": "Pequeños",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_991898-MCO69683009375_052023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_861866-MCO69668385954_052023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_992093-MCO69668346496_052023-F.webp"
+        ]
+    }, 
+    {
+        "id": 7,
+        "title": "Virtus Highline",
+        "price": 71500000,
+        "rating": 3.54,
+        "brand": "Volkswagen",
+        "CV": "1.6",
+        "model": 2020,
+        "category": "Grandes",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_606665-MCO70779931973_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_983267-MCO70749034052_072023-F.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_935853-MCO70779931991_072023-F.webp"
+        ]
+    }, 
+    {
+        "id": 8,
+        "title": "Sonic",
+        "price": 35000000,
+        "rating": 2.86,
+        "brand": "Chevrolet",
+        "CV": "1.6",
+        "model": 2015,
+        "category": "Grandes",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_936240-MCO69690407901_052023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_710429-MCO69690407853_052023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_846021-MCO69675209504_052023-F.webp"
+        ]
+    }, 
+    {
+        "id": 9,
+        "title": "Jimny",
+        "price": 54900000,
+        "rating": 3.79,
+        "brand": "Suzuki",
+        "CV": "1.3",
+        "model": 2017,
+        "category": "Todoterreno",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_813087-MCO70784051079_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_772212-MCO70784158343_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_916374-MCO70753286316_072023-O.webp"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Fiesta Titanium",
+        "price": 50000000,
+        "rating": 4.15,
+        "brand": "Ford",
+        "CV": "1.6",
+        "model": 2017,
+        "category": "Pequeños",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_979926-MCO70590058211_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_626133-MCO70562366660_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_665546-MCO70562367638_072023-F.webp"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "G20 Sportline",
+        "price": 156000000,
+        "rating": 4.88,
+        "brand": "BMW",
+        "CV": "2.0",
+        "model": 2020,
+        "category": "Deportivo",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_848839-MCO70800363401_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_974871-MCO70801049469_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_715809-MCO70801234871_072023-F.webp"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Clase Glc 250",
+        "price": 175000000,
+        "rating": 4.19,
+        "brand": "Mercedes Benz",
+        "CV": "2.0",
+        "model": 2020,
+        "category": "De lujo",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_751608-MCO70480689688_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_819571-MCO70480846700_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_986778-MCO70480846688_072023-F.webp"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Crossfox Mt",
+        "price": 54000000,
+        "rating": 4.89,
+        "brand": "Volkswagen",
+        "CV": "1.6",
+        "model": 2017,
+        "category": "SUV",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_723083-MCO70064380742_062023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_756311-MCO70064380754_062023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_988444-MCO70084575503_062023-F.webp"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "CX5 Touring",
+        "price": 120000000,
+        "rating": 4.80,
+        "brand": "Mazda",
+        "CV": "2.0",
+        "model": 2020,
+        "category": "SUV",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_892725-MCO70609434796_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_606639-MCO70609376060_072023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_988753-MCO70637695395_072023-F.webp"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Seat Leon",
+        "price": 114000000,
+        "rating": 4.56,
+        "brand": "Cupra",
+        "CV": "3.0",
+        "model": 2020,
+        "category": "Deportivo",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_767556-MCO54984806229_052023-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_854510-MCO54984804683_052023-F.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_612046-MCO54984804699_052023-F.webp"
+        ]
+    }
+    
+]
